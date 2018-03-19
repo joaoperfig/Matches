@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+	public float matchesleft;
+
 	// Use this for initialization
 	void Start () {
 		

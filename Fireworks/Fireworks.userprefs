@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Firecracker.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GameManager.cs" Line="10" Column="17" />
+      <File FileName="Assets\Scripts\MatchBox.cs" Line="29" Column="3" />
+      <File FileName="Assets\Scripts\Match.cs" Line="17" Column="36" />
+      <File FileName="Assets\Firecracker.cs" Line="27" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
