@@ -7,7 +7,7 @@ public class Firecracker : MonoBehaviour {
 	public float maxdist;
 	public float speed;
 
-	private float activated = false;
+	private bool activated = false;
 
 	private Animator anim;
 

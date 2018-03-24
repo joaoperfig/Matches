@@ -41,6 +41,9 @@ TagManager:
   - name: BackGround
     uniqueID: 443945333
     locked: 0
+  - name: Shadows
+    uniqueID: 2488560401
+    locked: 0
   - name: UnderMatch
     uniqueID: 4221530471
     locked: 0

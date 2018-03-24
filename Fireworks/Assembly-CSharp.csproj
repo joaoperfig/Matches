@@ -51,10 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Firecracker.cs" />
+     <Compile Include="Assets\Scripts\Firecracker.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Match.cs" />
      <Compile Include="Assets\Scripts\MatchBox.cs" />
+     <Compile Include="Assets\Scripts\Triggerable.cs" />
+     <Compile Include="Assets\Scripts\TubeFire.cs" />
+     <Compile Include="Assets\Scripts\TubeTrigger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
