@@ -6,6 +6,7 @@ public class Match : MonoBehaviour {
 
 	public float walkspeed;
 	private Animator animator;
+	private bool lit = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,13 @@ public class Match : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		move ();
+	}
+
+	public void setfire(){
+		if (!lit) {
+			lit = true;
+			animator.SetTrigger ("burn");
+		}
 	}
 
 	private void move(){
