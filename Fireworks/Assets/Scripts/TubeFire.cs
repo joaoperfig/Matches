@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class TubeFire :Triggerable {
 
-	public Triggerable totrigger;
+	private bool active = false;
+	private Animator anim;
 
 	// Use this for initialization
 	void Start () {
-		
+		anim = gameObject.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +17,8 @@ public class TubeFire :Triggerable {
 		
 	}
 
-	public override void trigger() {
+	public override void trigger() { // toggle active state and do appropriate animation
+		active = !active;
+		anim.SetBool ("active", active);
 	}
 }
