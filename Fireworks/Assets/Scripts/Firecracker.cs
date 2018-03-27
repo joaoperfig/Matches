@@ -6,7 +6,8 @@ public class Firecracker : MonoBehaviour {
 
 	public float maxdist;
 	public float speed;
-	public GameObject liftoff;
+	public GameObject liftoff;   // liftoof explosion
+	public GameObject fireworks;  // collision explosion
 	private bool activated = false;
 	private bool travelling = false;
 	private Match triggerer; //knows whitch match triggered this to kill him;
@@ -16,6 +17,7 @@ public class Firecracker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
+		Debug.Log(gameObject.GetComponent<Match> ());
 	}
 	
 	// Update is called once per frame
@@ -43,5 +45,13 @@ public class Firecracker : MonoBehaviour {
 			activate ();
 			triggerer = other.gameObject.GetComponent<Match> ();
 		}
+		if (other.gameObject.tag == "Board") {
+			explode ();
+		}
+	}
+
+	void explode () {
+		GameObject.Instantiate (fireworks, gameObject.transform.position, Quaternion.identity);
+		Destroy (gameObject);
 	}
 }

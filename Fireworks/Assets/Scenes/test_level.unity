@@ -1152,6 +1152,7 @@ MonoBehaviour:
   maxdist: 0
   speed: 8
   liftoff: {fileID: 1240444947386260, guid: 41ca81fe440d07947ac119704ca3f92f, type: 2}
+  fireworks: {fileID: 1300484502744708, guid: dd464e9c1404bbf46ba5af094451b1f3, type: 2}
 --- !u!61 &1607642108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1190,9 +1191,10 @@ GameObject:
   - component: {fileID: 2046295796}
   - component: {fileID: 2046295795}
   - component: {fileID: 2046295794}
+  - component: {fileID: 2046295798}
   m_Layer: 0
   m_Name: BackGround
-  m_TagString: Untagged
+  m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1355,3 +1357,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!50 &2046295798
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046295791}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 500000
+  m_LinearDrag: 5000
+  m_AngularDrag: 5000
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
