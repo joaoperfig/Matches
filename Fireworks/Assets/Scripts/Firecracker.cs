@@ -39,7 +39,6 @@ public class Firecracker : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log ("enter");
 		if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<Match>().lit) {
 			activate ();
 			triggerer = other.gameObject.GetComponent<Match> ();
