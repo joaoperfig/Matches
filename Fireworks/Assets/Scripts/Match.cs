@@ -6,7 +6,7 @@ public class Match : MonoBehaviour {
 
 	public float walkspeed;
 	private Animator animator;
-	private bool lit = false;
+	public bool lit = false;
 
 	// Use this for initialization
 	void Start () {
