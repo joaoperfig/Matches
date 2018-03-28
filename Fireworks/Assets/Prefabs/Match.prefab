@@ -118,6 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkspeed: 2.5
+  dead: {fileID: 1586771553921784, guid: eb7dd7e7af5bf514885df005a2063486, type: 2}
+  lit: 0
 --- !u!212 &212494530608165458
 SpriteRenderer:
   m_ObjectHideFlags: 1

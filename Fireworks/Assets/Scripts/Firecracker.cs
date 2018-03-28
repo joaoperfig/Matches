@@ -17,7 +17,6 @@ public class Firecracker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
-		Debug.Log(gameObject.GetComponent<Match> ());
 	}
 	
 	// Update is called once per frame
@@ -35,7 +34,7 @@ public class Firecracker : MonoBehaviour {
 		}
 	}
 
-	void activate(){
+	public void activate(){
 		activated = true;
 		anim.SetBool ("active", true);
 	}

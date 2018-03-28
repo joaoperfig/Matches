@@ -18,6 +18,16 @@ public class Fireworks : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("end"))
+			Destroy (gameObject);
+	}
+
+	void OnTriggerStay2D(Collider2D other){
+		if (other.gameObject.tag == "Rocket") {
+			other.gameObject.GetComponent<Firecracker> ().activate ();
+		}
+		if (other.gameObject.tag == "Player") {
+			other.gameObject.GetComponent<Match> ().die ();
+		}
 	}
 }

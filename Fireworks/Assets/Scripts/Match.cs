@@ -5,6 +5,7 @@ using UnityEngine;
 public class Match : MonoBehaviour {
 
 	public float walkspeed;
+	public GameObject dead;
 	private Animator animator;
 	public bool lit = false;
 
@@ -46,5 +47,10 @@ public class Match : MonoBehaviour {
 			animator.SetTrigger ("stop");
 		} 
 
+	}
+
+	public void die(){
+		GameObject.Instantiate (dead, gameObject.transform.position, Quaternion.identity);
+		Destroy (gameObject);
 	}
 }
