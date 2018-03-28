@@ -7,11 +7,13 @@ public class Match : MonoBehaviour {
 	public float walkspeed;
 	public GameObject dead;
 	private Animator animator;
+	private AudioSource asource;
 	public bool lit = false;
 
 	// Use this for initialization
 	void Start () {
 		animator = gameObject.GetComponent<Animator> ();
+		asource = gameObject.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -23,6 +25,7 @@ public class Match : MonoBehaviour {
 		if (!lit) {
 			lit = true;
 			animator.SetTrigger ("burn");
+			asource.Play ();
 		}
 	}
 

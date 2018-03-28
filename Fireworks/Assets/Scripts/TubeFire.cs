@@ -6,10 +6,12 @@ public class TubeFire :Triggerable {
 
 	public bool active;
 	private Animator anim;
+	private AudioSource asource;
 
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
+		asource = gameObject.GetComponent<AudioSource> ();
 		anim.SetBool ("active", active);
 	}
 	
@@ -21,6 +23,10 @@ public class TubeFire :Triggerable {
 	public override void trigger() { // toggle active state and do appropriate animation
 		active = !active;
 		anim.SetBool ("active", active);
+		if (active)
+			asource.Play ();
+		else
+			asource.Pause ();
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

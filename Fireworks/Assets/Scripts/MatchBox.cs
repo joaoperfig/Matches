@@ -10,10 +10,12 @@ public class MatchBox : MonoBehaviour {
 	private Animator anim;
 	private bool isbirthing = false;
 	private float maketime;
+	private AudioSource asource;
 
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
+		asource = gameObject.GetComponent<AudioSource> ();
 		makeMatch ();
 	}
 
@@ -31,6 +33,7 @@ public class MatchBox : MonoBehaviour {
 	public void makeMatch(){ 
 		isbirthing = true;
 		anim.SetTrigger ("birth");
+		asource.Play ();
 		maketime = Time.time; // Prevents match spawning because update was called before animation trigger was processed
 	}
 }

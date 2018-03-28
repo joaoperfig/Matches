@@ -8,13 +8,16 @@ public class TubeTrigger : MonoBehaviour {
 	private GameObject icon_instance;
 	public Vector3 iconpos;
 	public Triggerable totrigger; // Thing that will be triggered
+	public AudioClip[] sounds;
 	private Animator anim;
+	private AudioSource asource;
 
 	private bool selected = false; // player is on top of this
 
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
+		asource = gameObject.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -23,6 +26,8 @@ public class TubeTrigger : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.E)) {
 				totrigger.trigger ();
 				anim.SetTrigger ("activated");
+				asource.clip = sounds [Random.Range ((int)0, sounds.Length)];
+				asource.Play ();
 			}
 		}
 	}

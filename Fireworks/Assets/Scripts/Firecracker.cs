@@ -8,14 +8,17 @@ public class Firecracker : Explodable {
 	public float speed;
 	public GameObject liftoff;   // liftoof explosion
 	public GameObject fireworks;  // collision explosion
+	public AudioClip flight;
 	private bool activated = false;
 	private bool travelling = false;
 	private Animator anim;
+	private AudioSource asource;
 
 
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
+		asource = gameObject.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -29,6 +32,9 @@ public class Firecracker : Explodable {
 			if (anim.GetCurrentAnimatorStateInfo (0).IsTag ("travel")) {
 				travelling = true;
 				GameObject.Instantiate (liftoff, gameObject.transform.position, Quaternion.identity);
+				asource.Stop ();
+				asource.clip = flight;
+				asource.Play ();
 			}
 		}
 	}
@@ -36,6 +42,7 @@ public class Firecracker : Explodable {
 	public override void activate(){
 		activated = true;
 		anim.SetBool ("active", true);
+		asource.Play ();
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

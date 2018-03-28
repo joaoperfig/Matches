@@ -8,11 +8,13 @@ public class Bomb : Explodable {
 	private bool exploded = false;
 	private Animator anim;
 	public GameObject fireworks;
+	private AudioSource asource;
 
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator> ();
 		anim.SetBool ("active", activated);
+		asource = gameObject.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -32,6 +34,7 @@ public class Bomb : Explodable {
 	public override void activate(){
 		activated = true;
 		anim.SetBool ("active", true);
+		asource.Play ();
 	}
 
 	public void explode() {
