@@ -51,6 +51,7 @@ public class Match : MonoBehaviour {
 
 	public void die(){
 		GameObject.Instantiate (dead, gameObject.transform.position, Quaternion.identity);
+		GameObject.Find ("GameManager").GetComponent<GameManager> ().matchDie ();
 		Destroy (gameObject);
 	}
 }

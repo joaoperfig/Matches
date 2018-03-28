@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MatchBox : MonoBehaviour {
 
-	public GameObject match;
-	public Vector3 deltaspawn;
+	public GameObject match; // Match template to spawn
+	public Vector3 deltaspawn; // Position where new match spawns
 
 	private Animator anim;
 	private bool isbirthing = false;
@@ -28,7 +28,7 @@ public class MatchBox : MonoBehaviour {
 		}
 	}
 
-	public void makeMatch(){
+	public void makeMatch(){ 
 		isbirthing = true;
 		anim.SetTrigger ("birth");
 		maketime = Time.time; // Prevents match spawning because update was called before animation trigger was processed

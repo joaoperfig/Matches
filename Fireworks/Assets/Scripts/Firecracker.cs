@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Firecracker : MonoBehaviour {
+public class Firecracker : Explodable {
 
 	public float maxdist;
 	public float speed;
@@ -10,7 +10,6 @@ public class Firecracker : MonoBehaviour {
 	public GameObject fireworks;  // collision explosion
 	private bool activated = false;
 	private bool travelling = false;
-	private Match triggerer; //knows whitch match triggered this to kill him;
 	private Animator anim;
 
 
@@ -34,7 +33,7 @@ public class Firecracker : MonoBehaviour {
 		}
 	}
 
-	public void activate(){
+	public override void activate(){
 		activated = true;
 		anim.SetBool ("active", true);
 	}
@@ -42,7 +41,6 @@ public class Firecracker : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<Match>().lit) {
 			activate ();
-			triggerer = other.gameObject.GetComponent<Match> ();
 		}
 		if (other.gameObject.tag == "Board") {
 			explode ();

@@ -55,6 +55,9 @@ TagManager:
   - name: OverMatch
     uniqueID: 3130686217
     locked: 0
+  - name: Fireworks
+    uniqueID: 311004673
+    locked: 0
   - name: ForeGround
     uniqueID: 4140957293
     locked: 0

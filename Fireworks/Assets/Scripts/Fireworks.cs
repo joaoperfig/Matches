@@ -24,7 +24,7 @@ public class Fireworks : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other){
 		if (other.gameObject.tag == "Rocket") {
-			other.gameObject.GetComponent<Firecracker> ().activate ();
+			other.gameObject.GetComponent<Explodable> ().activate ();
 		}
 		if (other.gameObject.tag == "Player") {
 			other.gameObject.GetComponent<Match> ().die ();

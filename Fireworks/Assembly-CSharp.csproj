@@ -51,6 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Bomb.cs" />
+     <Compile Include="Assets\Scripts\CardboardBox.cs" />
+     <Compile Include="Assets\Scripts\Counter.cs" />
+     <Compile Include="Assets\Scripts\Explodable.cs" />
      <Compile Include="Assets\Scripts\Firecracker.cs" />
      <Compile Include="Assets\Scripts\Fireworks.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
