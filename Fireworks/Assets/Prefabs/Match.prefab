@@ -200,7 +200,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkspeed: 2.5
   dead: {fileID: 1586771553921784, guid: eb7dd7e7af5bf514885df005a2063486, type: 2}
+  burn: {fileID: 8300000, guid: c7f49b7d60610bc4e84179eaf05ad068, type: 3}
+  place: {fileID: 8300000, guid: 56795814254830f40bad65f5f69e122b, type: 3}
   lit: 0
+  iscarry: 0
+  placeicon: {fileID: 1324876653071860, guid: 1dbe5e0a5707d51469c0312dc611b41e, type: 2}
+  iconpos: {x: 0, y: 1.3, z: 0}
+  itempos: {x: 0, y: 0.2, z: 0}
+  fireworks: {fileID: 1300484502744708, guid: dd464e9c1404bbf46ba5af094451b1f3, type: 2}
 --- !u!212 &212494530608165458
 SpriteRenderer:
   m_ObjectHideFlags: 1

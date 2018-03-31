@@ -33,7 +33,7 @@ public class TubeTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.tag == "Player") {
+		if (other.gameObject.tag == "Player" && !other.gameObject.GetComponent<Match>().iscarry) { // player cannot be carrying an item (would cause "E" conflicts)
 			selected = true;
 			icon_instance = GameObject.Instantiate (icon, gameObject.transform.position+iconpos, Quaternion.identity);
 		}
