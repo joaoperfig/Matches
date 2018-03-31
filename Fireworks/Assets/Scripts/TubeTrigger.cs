@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TubeTrigger : MonoBehaviour {
-
+	// Thing that can be ctivated by player to trigger triggerables
 	public GameObject icon;
 	private GameObject icon_instance;
 	public Vector3 iconpos;
-	public Triggerable totrigger; // Thing that will be triggered
+	public Triggerable[] totrigger; // Thing that will be triggered
 	public AudioClip[] sounds;
 	private Animator anim;
 	private AudioSource asource;
@@ -24,7 +24,7 @@ public class TubeTrigger : MonoBehaviour {
 	void Update () {
 		if (selected) {
 			if (Input.GetKeyDown (KeyCode.E)) {
-				totrigger.trigger ();
+				foreach ( Triggerable t in totrigger) t.trigger ();
 				anim.SetTrigger ("activated");
 				asource.clip = sounds [Random.Range ((int)0, sounds.Length)];
 				asource.Play ();

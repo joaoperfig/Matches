@@ -26,4 +26,8 @@ public class GameManager : MonoBehaviour {
 			matchbox.makeMatch ();
 		}
 	}
+
+	public void win () {
+		Debug.Log ("yay");
+	}
 }

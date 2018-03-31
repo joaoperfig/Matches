@@ -60,8 +60,10 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Match.cs" />
      <Compile Include="Assets\Scripts\MatchBox.cs" />
+     <Compile Include="Assets\Scripts\RetractableWall.cs" />
      <Compile Include="Assets\Scripts\SelfDestruct.cs" />
      <Compile Include="Assets\Scripts\Triggerable.cs" />
+     <Compile Include="Assets\Scripts\TubeExit.cs" />
      <Compile Include="Assets\Scripts\TubeFire.cs" />
      <Compile Include="Assets\Scripts\TubeTrigger.cs" />
  <Reference Include="UnityEngine.UI">
