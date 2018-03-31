@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\CardboardBox.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\EndGame.cs" />
      <Compile Include="Assets\Scripts\EndMachine.cs" />
      <Compile Include="Assets\Scripts\Explodable.cs" />
      <Compile Include="Assets\Scripts\FadeIn.cs" />
