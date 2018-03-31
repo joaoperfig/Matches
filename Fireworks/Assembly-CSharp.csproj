@@ -54,13 +54,17 @@
      <Compile Include="Assets\Scripts\Bomb.cs" />
      <Compile Include="Assets\Scripts\CardboardBox.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
+     <Compile Include="Assets\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\EndMachine.cs" />
      <Compile Include="Assets\Scripts\Explodable.cs" />
+     <Compile Include="Assets\Scripts\FadeIn.cs" />
      <Compile Include="Assets\Scripts\Firecracker.cs" />
      <Compile Include="Assets\Scripts\Fireworks.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\ItemBox.cs" />
      <Compile Include="Assets\Scripts\Match.cs" />
      <Compile Include="Assets\Scripts\MatchBox.cs" />
+     <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\RetractableWall.cs" />
      <Compile Include="Assets\Scripts\SelfDestruct.cs" />
      <Compile Include="Assets\Scripts\Triggerable.cs" />

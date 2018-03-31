@@ -57,10 +57,10 @@ public class Match : MonoBehaviour {
 
 	private void move(){
 		Vector3 movement = new Vector3 (0, 0, 0);  // vector with movement direction
-		if (Input.GetKey (KeyCode.A)) { // Player pressed left
+		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) { // Player pressed left
 			movement += new Vector3 (-1, 0, 0);
 		}
-		if (Input.GetKey (KeyCode.D)) { // Player pressed Right
+		if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) { // Player pressed Right
 			movement += new Vector3 (1, 0, 0);
 		}
 		if (movement.sqrMagnitude > 0) {
