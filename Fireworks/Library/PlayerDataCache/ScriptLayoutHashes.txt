@@ -1,4 +1,4 @@
-WindowsStandalone
+WebGL
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/level_1.unity
@@ -168,3 +168,4 @@ ca3a0b6e568813f61a9052f60f2dc37b Assembly-CSharp.dll:.ItemBox
 121eda11e9a06fb258198cadeedf00e2 Assembly-CSharp.dll:.FadeIn
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CardboardBox
 78e08a45e5705d6888840f57b6c7c479 Assembly-CSharp.dll:.MatchBox
+d81f6460ac96193657ebe51517820037 Assembly-CSharp.dll:.FadeInAfter

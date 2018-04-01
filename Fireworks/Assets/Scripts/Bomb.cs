@@ -25,7 +25,7 @@ public class Bomb : Explodable {
 			Destroy (gameObject);
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerStay2D(Collider2D other){
 		if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<Match>().lit) {
 			activate ();
 		}
